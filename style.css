@@ -38,3 +38,49 @@ body {
 img {
     border-radius: 5px;
 }
+
+.title {
+    font-family: 'Outfit', sans-serif;
+    color: var(--white);
+
+}
+
+.description {
+    font-family: 'Outfit', sans-serif;
+    color: var(--soft-blue);
+    font-size: 18px;
+}
+
+.price-time-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;    
+}
+
+.eth {
+    font-family: 'Outfit', sans-serif;
+    color: var(--cyan);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.days {
+    font-family: 'Outfit', sans-serif;
+    color: var(--soft-blue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    border-color: var(--soft-blue);
+    width: 100%;
+}
+
+
+

@@ -49,7 +49,7 @@ body {
    
 }
 
-.image-container img {
+.main-image {
     border-radius: 10px;
     width: 100%;
 }
@@ -63,23 +63,26 @@ body {
     left: 0;
     right: 0;
     background-color: var(--cyan);
-    opacity: 0;
+    opacity: 50%;
     border-radius: 10px;
+    visibility: hidden;
     
 
 }
 
-.overlay img {
-    height: 50px;
-    width: 50px;
+.view-icon {
     position: absolute;
-    
-    top: 50%;
-    display: inline-block;
+    left:42%;
+    bottom: 42%;
+    visibility: hidden;
 }
 
 .image-container:hover .overlay {
-    opacity: 50%;
+    visibility: visible;
+}
+
+.image-container:hover .view-icon {
+    visibility: visible;
 }
 
 .title {
@@ -87,7 +90,11 @@ body {
     color: var(--white);
     font-weight: 600;
     font-size: 20px;
+}
 
+.title:hover {
+    color: var(--cyan);
+    cursor: pointer; 
 }
 
 .description {

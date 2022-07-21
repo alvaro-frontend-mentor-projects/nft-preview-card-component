@@ -12,6 +12,12 @@
     --white: hsl(0, 0%, 100%);
 }
 
+/* ZERO MARGIN AND PADDING */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: var(--very-dark-blue-main);
     margin: 0;
@@ -20,6 +26,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     
 }
 
@@ -33,15 +40,18 @@ body {
     width: 300px;
     padding: 1.5rem;
     border-radius: 10px;
+    gap: 1.2rem;
 }
 
 img {
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .title {
     font-family: 'Outfit', sans-serif;
     color: var(--white);
+    font-weight: 600;
+    font-size: 20px;
 
 }
 
@@ -49,13 +59,14 @@ img {
     font-family: 'Outfit', sans-serif;
     color: var(--soft-blue);
     font-size: 18px;
+    font-weight: 300;
 }
 
 .price-time-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 40px;    
+    height: 20px;    
 }
 
 .eth {
@@ -65,6 +76,8 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-weight: 400;
+    gap: 8px;
 
 }
 
@@ -75,6 +88,8 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-weight: 300;
+    gap: 8px;
 }
 
 .line {
@@ -82,5 +97,29 @@ img {
     width: 100%;
 }
 
+.author-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.author-container img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    border: 1px solid;
+    border-color: var(--white);
+    
+}
+
+.author-container p {
+    font-family: 'Outfit', sans-serif;
+    color: var(--white);
+}
+
+.author-container p span {
+    color: var(--soft-blue);
+}
 
 

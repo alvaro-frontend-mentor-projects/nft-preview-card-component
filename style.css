@@ -16,4 +16,25 @@ body {
     background-color: var(--very-dark-blue-main);
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card-container {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--very-dark-blue-card);
+    width: 300px;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+img {
+    border-radius: 5px;
 }
